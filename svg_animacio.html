@@ -1,0 +1,21 @@
+
+<style>
+  .drawing-svg {
+    width: 300px;
+  }
+  .path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+    animation: draw 4s linear forwards;
+  }
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+</style>
+<svg class="drawing-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path class="path" fill="none" stroke="#ffdf6c" stroke-width="2"
+    d="M10,10 L90,10 L90,90 L10,90 L10,10 M50,10 L50,90 M10,50 L90,50" />
+</svg>
+
